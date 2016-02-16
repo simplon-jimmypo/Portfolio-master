@@ -1,0 +1,419 @@
+/*Prélude*********************************************************/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body{
+  scroll-behavior: smooth;
+  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'La Belle Aurore', cursive;
+  color: white;
+}
+
+
+html{
+  box-sizing: border-box;
+  /*scroll-behavior: smooth;*/
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/*Corps**********************************************************/
+
+.section{
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px grey;
+  display: flex;
+  flex-direction: column;
+}
+
+video{
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+
+}
+#section1{
+  /*background-image: url(homecv2.jpg);*/
+  /*height: 100vh;*/
+  background-size: cover;
+  /*background-position: 10%;*/
+  background-color: inherit;
+}
+
+/*section 1*****************************************************/
+
+header{
+
+  display: flex;
+  width: 100%;
+}
+
+ul{
+  margin-top: 15vh;
+  width:100vw;
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin-right: 10vw;
+}
+
+#prenom{
+  font-weight: bold;
+  position: absolute;
+  margin-top: 15vh;
+  font-size: 1.4em;
+  margin-left: 10vw;
+  font-family: 'Roboto';
+}
+
+li{
+  font-family: 'Roboto';
+  margin-left: 50px;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+#intro{
+  display: flex;
+  height: 50vh;
+  width: 70vw;
+  margin: 30px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#textIntro{
+  font-size: 2.4em;
+  display: flex;
+  font-weight: 500;
+}
+
+#rondScroll{
+  display: flex;
+  margin: 30px auto;
+  height: 70px;
+  width: 70px;
+  border: 1px solid red;
+  border-radius: 45px;
+  justify-content: center;
+  align-items: center;
+}
+
+#rondScroll:hover{
+  background-color: rgba(0,0,0,0.5);
+  transition: 0.5s;
+}
+
+#rondScroll:hover #textScroll{
+  color: red;
+}
+
+#textScroll{
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/* Section 2*********************************************************************/
+
+#section2{
+  flex-direction: row;
+  flex-wrap: wrap;
+  height:120vh
+}
+.projet{
+ display: flex;
+  width: 50%;
+  height: 50%;
+}
+
+.opacite{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    flex-direction:raw;
+  }
+
+#p1{
+  background-image: url(mobilSound.png);
+  background-size: 100% 100%;
+  background-position: center;
+  }
+
+#p1:hover{
+  background-size: 130% 130%;
+  animation-name: zoomin1;
+  animation-duration: 3s;
+}
+
+@keyframes zoomin1{
+  from{
+    background-size: 100% 100%;
+}
+  to{
+    background-size: 130% 130%;
+}
+}
+
+.ipsum{
+  font-family: 'Roboto';
+  position: absolute;
+  display: none;
+   margin-left: 3vw;
+  padding-top: 3vh;
+  /*background-color: green;*/
+  animation-name: apparition;
+  animation-duration: 0.5s;
+}
+@keyframes apparition {
+  from {
+    opacity: 0;
+    margin-left: 50%
+  }
+
+  25%{
+    opacity: 0;
+}
+
+  to {
+    opacity: 1;
+  }
+}
+
+.projet:hover .ipsum{
+  display: block;
+}
+
+.fenetre{
+  /*display:flex*/
+  display: none;
+  height: 10vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  align-self: flex-end;
+  animation-name: apparitionFenetre;
+  animation-duration: 0.5s;
+  /*animation-delay: 1.5s;*/
+
+}
+
+.projet:hover .fenetre{
+  display:block
+}
+
+@keyframes apparitionFenetre {
+  from {
+    height: 0%;
+  }
+
+  to {
+    height:10vh;
+  }
+}
+
+.detail{
+  font-family: 'Roboto';
+  margin-top: 1vh;
+  margin-left: 3vw;
+  font-size: 1.2em;
+}
+
+.resume{
+  font-family: 'Roboto';
+margin-left: 3vw;
+}
+
+
+#p2{
+  background-image: url(blur.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+}
+#p2:hover{
+  background-size: 130% 130%;
+  animation-name: zoomin2;
+  animation-duration: 3s;
+}
+
+@keyframes zoomin2{
+  from{
+    background-size: 100% 100%;
+}
+  to{
+    background-size: 130% 130%;
+}
+}
+
+
+#p3{
+  background-image: url(p3.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+}
+#p3:hover{
+  background-size: 130% 130%;
+  animation-name: zoomin3;
+  animation-duration: 3s;
+}
+
+@keyframes zoomin3{
+  from{
+    background-size: 100% 100%;
+}
+  to{
+    background-size: 130% 130%;
+}
+}
+
+
+#p4{
+  background-image: url(p4.png);
+  background-size: 100% 100%;
+  background-position: center;
+}
+#p4:hover{
+  background-size: 130% 130%;
+  animation-name: zoomin4;
+  animation-duration: 3s;
+}
+
+@keyframes zoomin4{
+  from{
+    background-size: 100% 100%;
+}
+  to{
+    background-size: 130% 130%;
+}
+}
+
+/*Profil*************************************************************************/
+
+#sectionProfil{
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+aside{
+  margin-top: 50px;
+}
+
+#quiSuisJe{
+  position: fixed;
+  margin-left: 6vw;
+  color: #1E10CD;
+  font-family: 'Roboto';
+  font-size: 75px;
+}
+
+#presentation{
+  font-family: 'Roboto';
+  margin-left: 40%;
+  /*background-color: green;*/
+  /*align-items: center;*/
+}
+.titreMoi{
+  color: #1E10CD;
+  font-weight: lighter;
+  font-size: 1.9em;
+}
+
+.titreMoi p{
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-right: 6vw;
+  text-align: justify;
+  color: black;
+  font-size: 0.55em;
+}
+
+.containerJauge{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.competence{
+  margin-top: 20px;
+  color: black;
+  font-weight:lighter;
+  font-size: 1.2em;
+}
+
+.jauge{
+  /*margin-top: 10px;*/
+  height: 10px;
+  width: 200px;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+}
+.pourcentage{
+  height: 10px;
+  width: 140px;
+  background-color: #1E10CD;
+}
+
+#pourcentagePs{
+  width: 140px;
+}
+
+#pourcentageJs{
+  width: 60px;
+}
+
+#pourcentagePp{
+  width: 150px;
+}
+
+#pourcentageAe{
+  width: 100px;
+}
+
+.chiffre{
+  color: black;
+  margin-left: 20px;
+  font-size: 0.9em;
+}
+
+
+
+
+/*footer*************************************************************************/
+
+#opacityFooter{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(30, 16, 205, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mesInspirations{
+  height: 35vh;
+  width: 100%;
+  background-image: url(vousaimez.jpeg);
+  background-size: 100%;
+  background-position: 20% 5%;
+  display: flex;
+  }
+
+#adjectifs{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  border: 2px solid white;
+  padding: 20px;
+}
