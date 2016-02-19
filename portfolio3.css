@@ -1,4 +1,5 @@
 /*Prélude*********************************************************/
+
 *{
   margin: 0;
   padding: 0;
@@ -8,8 +9,8 @@
 body{
   scroll-behavior: smooth;
   /*font-family: 'Roboto', sans-serif;*/
-  font-family: 'La Belle Aurore', cursive;
-  color: white;
+  font-family:'cocomatultralight';
+  color: white;;
 }
 
 
@@ -41,12 +42,13 @@ video{
   height: 100%;
   object-fit: cover;
 
-
 }
+
 #section1{
-  /*background-image: url(homecv2.jpg);*/
-  /*height: 100vh;*/
-  background-size: cover;
+  /*background-image: url(CV1.png);*/
+  /*height: 100%;*/
+  width: 100%;
+  background-size: 100%;
   /*background-position: 10%;*/
   background-color: inherit;
 }
@@ -69,26 +71,28 @@ ul{
 }
 
 #prenom{
+  font-size: 2.6em;
   font-weight: bold;
   position: absolute;
   margin-top: 15vh;
-  font-size: 1.4em;
+  /*font-size: 1.4em;*/
   margin-left: 10vw;
-  font-family: 'Roboto';
+  /*font-family: 'Roboto';*/
+  font-family:'cocomatultralight';
+
 }
 
 li{
   font-family: 'Roboto';
   margin-left: 50px;
   font-size: 1.2em;
-  font-weight: lighter;
 }
 
 #intro{
   display: flex;
   height: 50vh;
   width: 70vw;
-  margin: 30px auto;
+  margin: auto auto;
   justify-content: center;
   align-items: center;
 }
@@ -97,9 +101,11 @@ li{
   font-size: 2.4em;
   display: flex;
   font-weight: 500;
+  font-family: 'La Belle Aurore', cursive;
+
 }
 
-#rondScroll{
+/*#rondScroll{
   display: flex;
   margin: 30px auto;
   height: 70px;
@@ -122,7 +128,7 @@ li{
 #textScroll{
   font-style: italic;
   font-weight: lighter;
-}
+}*/
 
 /* Section 2*********************************************************************/
 
@@ -135,6 +141,10 @@ li{
  display: flex;
   width: 50%;
   height: 50%;
+}
+
+.projet:hover .opacite{
+  background-color: rgba(0,0,0,0);
 }
 
 .opacite{
@@ -154,7 +164,7 @@ li{
 #p1:hover{
   background-size: 130% 130%;
   animation-name: zoomin1;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 
 @keyframes zoomin1{
@@ -167,12 +177,10 @@ li{
 }
 
 .ipsum{
-  font-family: 'Roboto';
   position: absolute;
   display: none;
    margin-left: 3vw;
   padding-top: 3vh;
-  /*background-color: green;*/
   animation-name: apparition;
   animation-duration: 0.5s;
 }
@@ -196,7 +204,6 @@ li{
 }
 
 .fenetre{
-  /*display:flex*/
   display: none;
   height: 10vh;
   width: 100%;
@@ -204,8 +211,6 @@ li{
   align-self: flex-end;
   animation-name: apparitionFenetre;
   animation-duration: 0.5s;
-  /*animation-delay: 1.5s;*/
-
 }
 
 .projet:hover .fenetre{
@@ -214,24 +219,22 @@ li{
 
 @keyframes apparitionFenetre {
   from {
-    height: 0%;
+    height: 0vh;
   }
-
   to {
     height:10vh;
   }
 }
 
 .detail{
-  font-family: 'Roboto';
   margin-top: 1vh;
   margin-left: 3vw;
   font-size: 1.2em;
 }
 
-.resume{
-  font-family: 'Roboto';
-margin-left: 3vw;
+.annee{
+  margin-left: 3vw;
+  font-family: 'roboto';
 }
 
 
@@ -243,7 +246,7 @@ margin-left: 3vw;
 #p2:hover{
   background-size: 130% 130%;
   animation-name: zoomin2;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 
 @keyframes zoomin2{
@@ -264,7 +267,7 @@ margin-left: 3vw;
 #p3:hover{
   background-size: 130% 130%;
   animation-name: zoomin3;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 
 @keyframes zoomin3{
@@ -285,7 +288,7 @@ margin-left: 3vw;
 #p4:hover{
   background-size: 130% 130%;
   animation-name: zoomin4;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 
 @keyframes zoomin4{
@@ -301,7 +304,8 @@ margin-left: 3vw;
 
 #sectionProfil{
   height: 100%;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  background-color: black;
 }
 
 aside{
@@ -309,11 +313,12 @@ aside{
 }
 
 #quiSuisJe{
-  position: fixed;
+  background: -webkit-gradient(linear, left top, left bottom, from(grey), to(white));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   margin-left: 6vw;
-  color: #1E10CD;
-  font-family: 'Roboto';
-  font-size: 75px;
+  font-family: 'cocomatultralight';
+  font-size: 70px;
 }
 
 #presentation{
@@ -323,9 +328,11 @@ aside{
   /*align-items: center;*/
 }
 .titreMoi{
-  color: #1E10CD;
+  color: lightgrey;
   font-weight: lighter;
   font-size: 1.9em;
+  font-family: 'cocomatultralight';
+
 }
 
 .titreMoi p{
@@ -333,8 +340,9 @@ aside{
   margin-bottom: 50px;
   margin-right: 6vw;
   text-align: justify;
-  color: black;
   font-size: 0.55em;
+  color: white;
+  font-family: 'Roboto';
 }
 
 .containerJauge{
@@ -346,7 +354,7 @@ aside{
 
 .competence{
   margin-top: 20px;
-  color: black;
+  color: white;;
   font-weight:lighter;
   font-size: 1.2em;
 }
@@ -362,7 +370,7 @@ aside{
 .pourcentage{
   height: 10px;
   width: 140px;
-  background-color: #1E10CD;
+  background-color: #110E0E;
 }
 
 #pourcentagePs{
@@ -382,7 +390,7 @@ aside{
 }
 
 .chiffre{
-  color: black;
+  color: lightgrey;
   margin-left: 20px;
   font-size: 0.9em;
 }
@@ -395,7 +403,8 @@ aside{
 #opacityFooter{
   height: 100%;
   width: 100%;
-  background-color: rgba(30, 16, 205, 0.5);
+  /*background-color: rgba(30, 16, 205, 0.5);*/
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -410,10 +419,15 @@ aside{
   display: flex;
   }
 
-#adjectifs{
-  font-family: 'Roboto', sans-serif;
+#question{
+  font-family: 'cocomatultralight';
   font-size: 1.3em;
   text-align: center;
   border: 2px solid white;
   padding: 20px;
 }
+
+
+
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on February 16, 2016 */

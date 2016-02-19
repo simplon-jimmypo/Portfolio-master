@@ -2,9 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="font/stylesheet.css">
     <link type="text/css" rel="stylesheet" href="portfolio3.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700,300|Work+Sans:400,300,700,800,500,600|Carter+One|Marcellus+SC|Megrim|La+Belle+Aurore' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="font/font.css">
     <title>Bienvenue</title>
   </head>
 
@@ -13,15 +15,18 @@
 <!--****************************************************************Section 1  -->
 
     <div class="section" id="section1">
-      <video  autoplay muted>
+      <video autoplay muted>
         <source src="videocv.mp4" type="video/mp4">
       </video>
 
+      <!-- <video src="videofile.ogg" autoplay controls poster="posterimage.jpg">
+
+      </video> -->
       <header>
-        <div id="prenom">Jimmy Poirot</div>
+        <div id="prenom"> - Jimmy Poirot -</div>
         <ul>
           <li><a id="projets" href="#">Projets</a></li>
-          <li><a id="profil" href="#">Profil</a></li>
+          <li><a id="profil" href="#sectionProfil">Profil</a></li>
           <li><a id="contact" href="#">Contact</a></li>
         </ul>
       </header>
@@ -43,8 +48,8 @@
         <div class="opacite">
           <h1 class="ipsum">MobileSound</h1>
           <div class="fenetre">
-            <h2 class="detail"><a href="#">Motion</a></h2>
-            <p class="resume">Résumé</p>
+            <h2 class="detail"><a href="projetMobileSound.html" target="_blank">Motion</a></h2>
+            <p class="annee">2016</p>
           </div>
         </div>
       </div>
@@ -54,7 +59,7 @@
           <h1 class="ipsum">ipsum ipsum ipsum</h1>
           <div class="fenetre">
             <h2 class="detail"><a href="#">Web</a></h2>
-            <p class="resume">Résumé</p>
+            <p class="annee">2015</p>
           </div>
         </div>
       </div>
@@ -63,8 +68,8 @@
         <div class="opacite">
           <h1 class="ipsum">Canvas</h1>
           <div class="fenetre">
-            <h2 class="detail"><a href="http://www.rxlabz.com/simplon/canvas/index.html">Web</a></h2>
-            <p class="resume">Résumé</p>
+            <h2 class="detail"><a href="http://www.rxlabz.com/simplon/canvas/index.html"target="_blank">Web</a></h2>
+            <p class="annee">2015</p>
           </div>
         </div>
       </div>
@@ -74,7 +79,7 @@
           <h1 class="ipsum">ipsum ipsum ipsum</h1>
           <div class="fenetre">
             <h2 class="detail"><a href="#">Motion</a></h2>
-            <p class="resume">Résumé</p>
+            <p class="annee">2016</p>
           </div>
           </div>
         </div>
@@ -85,10 +90,10 @@
 
       <div class="section" id="sectionProfil">
         <aside>
-          <h1 id="quiSuisJe">Qui suis-je?</h1>
+          <h1 id="quiSuisJe">A propos</h1>
         </aside>
         <div id="presentation">
-          <h1 class="titreMoi">Mon bagage
+          <h1 class="titreMoi"><b>Mon bagage</b>
             <p>
               Après un baccalauréat economique et social, j'ai fait fait plusieurs petits boulots, avant de me lancer dans les métiers de bouche.
               La patisserie et la cuisine m'ont permient de cutiver mon <b>sens artistique</b> en réalisant des mets esthétiques tant au niveau de l'oeil
@@ -97,7 +102,7 @@
               Après 5 ans à travailler de mes mains, l'envie de créer sur le web continuait de grandir en moi et je me suis donc inscrit dans l'école de développement web <b>Simplon</b>.
             </p>
           </h1>
-          <h1 class="titreMoi">Mes aspirations
+          <h1 class="titreMoi"><b>Mes aspirations</b>
             <p>
               Apprenant le code depuis octobre 2015, je prends chaque jours comme le moyen de repousser mes limites. J'aime le <b>design</b>, <b>l'hergonomie</b> et <b>l'interaction</b> sur un site web.
               J'ai acquis un Samsung NX500 avec lequel je prends des <b>photos</b>, la majorité pour <b>immortaliser</b> les moments que je vis ou encore mettre en <b>valeurs</b> mes sujets. Ce dernier me permet également de <b>filmer</b>
@@ -106,7 +111,7 @@
           </h1>
           <!--**********************************************BLOC COMPETENCE***************  -->
 
-            <h1 class="titreMoi">Mes compétences
+            <h1 class="titreMoi"><b>Mes compétences</b>
 
             <h2 class="competence">Html/css</h2>
             <div class="containerJauge">
@@ -154,16 +159,31 @@
 <!--*******************************************************************Footer  -->
 
       <footer>
-        <div id="mesInspirations">
+        <!-- <object type="application/x-shockwave-flash" width="560" height="315"
+          data="https://youtu.be/8G0AldKo7jA">
+		      <param name="movie" value="https://youtu.be/8G0AldKo7jA" />
+          <param name="wmode" value="transparent" />
+	     </object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8G0AldKo7jA" frameborder="0" allowfullscreen></iframe> -->
+
+        <div id="mesInspirations" >
           <div id="opacityFooter">
-            <p id="adjectifs">
+            <a href="mailto:poirot.jimmy@gmail.com"><p id="question">
             <!-- "Polyvalent, ambitieux, invest" -->
-            Ce que vous voyez vous plait? <br>
+            <b>Ce que vous voyez vous plait?<b> <br>
             <b>Travaillons ensemble!<b>
             </p>
+          </a>
           </div>
         </div>
       </footer>
+
+
+<!-- <script type="text/javascript">
+    function transitionSmooth(){
+
+}
+  </script> -->
 
   </body>
 </html>
