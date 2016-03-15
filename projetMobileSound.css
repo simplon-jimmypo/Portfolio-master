@@ -14,14 +14,26 @@ body{
   animation-fill-mode: forwards;*/
 }
 
+#logo{
+  /*position: absolute;*/
+  height: 50px;
+  width: 50px;
+}
 
-#jimmyPoirot{
+img{
+  margin-top: -30px;
+  height: 250px;
+  width: 250px;
+}
+
+#logo{
+  /*position: absolute;*/
   opacity: 0;
-  margin-left: 100px;
+  /*margin-left: 100px;*/
   /*letter-spacing: 8px;*/
   font-size: 2.6em;
   margin-right: 90px;
-  margin-top: 40px;
+  /*margin-top: 40px;*/
   text-align: right;
   font-family:'cocomatultralight';
   animation-name: apparition;
@@ -55,6 +67,7 @@ body{
 }
 
 #containerText{
+  margin-top: 20vh;
   opacity: 0;
   margin-left: 50px;
   width: 30vw;
@@ -92,6 +105,7 @@ span{
 }
 
 #containerVideo{
+  margin-top: 10vh;
   opacity: 0;
   height: auto;
   width: auto;

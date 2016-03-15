@@ -69,18 +69,27 @@ ul{
   justify-content: flex-end;
   margin-right: 10vw;
 }
-
+/*
 #prenom{
   font-size: 2.6em;
   font-weight: bold;
   position: absolute;
   margin-top: 15vh;
-  /*font-size: 1.4em;*/
   margin-left: 10vw;
-  /*font-family: 'Roboto';*/
   font-family:'cocomatultralight';
+}*/
 
+#logo{
+  /*position: absolute;*/
+  height: 50px;
+  width: 50px;
 }
+
+img{
+  height: 250px;
+  width: 250px;
+}
+
 
 li{
   font-family: 'Roboto';
@@ -105,30 +114,6 @@ li{
 
 }
 
-/*#rondScroll{
-  display: flex;
-  margin: 30px auto;
-  height: 70px;
-  width: 70px;
-  border: 1px solid red;
-  border-radius: 45px;
-  justify-content: center;
-  align-items: center;
-}
-
-#rondScroll:hover{
-  background-color: rgba(0,0,0,0.5);
-  transition: 0.5s;
-}
-
-#rondScroll:hover #textScroll{
-  color: red;
-}
-
-#textScroll{
-  font-style: italic;
-  font-weight: lighter;
-}*/
 
 /* Section 2*********************************************************************/
 
@@ -370,7 +355,8 @@ aside{
 .pourcentage{
   height: 10px;
   width: 140px;
-  background-color: #110E0E;
+  /*background-color: #110E0E;*/
+  background-color: #26C617;
 }
 
 #pourcentagePs{
@@ -419,6 +405,10 @@ aside{
   display: flex;
   }
 
+#question:hover{
+  background-color: rgba(40, 198, 23, 0.5);
+}
+
 #question{
   font-family: 'cocomatultralight';
   font-size: 1.3em;
@@ -427,6 +417,37 @@ aside{
   padding: 20px;
 }
 
+
+span{
+  font-family: arial;
+}
+
+.projeta{
+  visibility: hidden;
+}
+
+@media screen and (max-width: 640px) {
+
+    #section1 video{
+      visibility: hidden;
+  }
+    #section1{
+      background-color: black;
+  }
+
+    .projet{
+      height: 50vh;
+      width: 100%;
+  }
+    #section2{
+      height: 100%;
+      flex-direction: column;
+  }
+    .opacite{
+      visibility: hidden;
+  }
+    
+}
 
 
 
